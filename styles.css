@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container div {
+    outline: 1px solid #000000;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(5, minmax(100px, 1fr)) / repeat(4, minmax(100px, 1fr));
+    grid-template-areas:
+        "side head head head"
+        "side main main main"
+        "side main main main"
+        "side main main main"
+        "side main main main";
+}
+
+.header {
+    grid-area: head;
+}
+
+.sidebar {
+    grid-area: side;
+}
+
+.main {
+    grid-area: main;
+}
