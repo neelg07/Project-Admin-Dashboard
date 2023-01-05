@@ -3,29 +3,34 @@
     padding: 0;
 }
 
-.container div {
+.container > div {
     outline: 1px solid #000000;
 }
 
+/** Container Grid */
+
 .container {
     display: grid;
-    grid-template: repeat(5, minmax(100px, 1fr)) / repeat(4, minmax(100px, 1fr));
-    grid-template-areas:
-        "side head head head"
-        "side main main main"
-        "side main main main"
-        "side main main main"
-        "side main main main";
+    grid-template: repeat(5, minmax(150px, 1fr)) / repeat(4, minmax(100px, 1fr)); 
 }
 
 .header {
-    grid-area: head;
+    grid-column: 2 / end;
 }
 
 .sidebar {
-    grid-area: side;
+    grid-column: 1 / 2;
+    grid-row: 1 / end;
 }
 
 .main {
-    grid-area: main;
+    grid-column: 2 / end;
+    grid-row: 2 / end;
+}
+
+/** Sidebar Grid */
+.sidebar {
+    display: grid;
+    grid-template: 1fr 3fr 5fr / 1fr;
+    padding: 10px;
 }
