@@ -59,3 +59,26 @@
     grid-template: 1fr 1fr 1fr 1fr / 1fr;
     gap: 15px;
 }
+
+/** Header Grid */
+.header {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+}
+
+.bottomhead {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.hello {
+    display: flex;
+    gap: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+/** Main Grid */
+.main {
+    background-color: lightgray;
+}
