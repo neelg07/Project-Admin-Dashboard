@@ -78,6 +78,28 @@
     align-self: center;
 }
 
+.share button {
+    width: clamp(100px, 25%, 125px);
+    height: 35px;
+
+    background-color: rgb(15, 168, 219);
+    color: white;
+
+    border: none;
+    border-radius: 100px;
+}
+
+.share {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.share button:hover {
+    transform: translateY(-2px);
+}
+
 /** Main Grid */
 .main {
     background-color: lightgray;
