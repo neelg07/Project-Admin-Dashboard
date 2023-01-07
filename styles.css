@@ -174,7 +174,7 @@ input[type='search'] {
 /** Main Grid */
 .main {
     background-color: lightgray;
-    padding: 30px;
+    padding: 20px;
     
     display: grid;
     grid-template: 100% / 2.5fr 1fr;
@@ -184,7 +184,6 @@ input[type='search'] {
 
 .rmain {
     display: grid;
-    padding: 10px;
     grid-template: 2rem 1fr 2rem 1fr / 1fr;
     gap: 10px;
 }
@@ -195,7 +194,7 @@ input[type='search'] {
     background-color: white;
     padding: 20px 30px;
     border-radius: 10px;
-    width: 30ch;
+    width: 40ch;
 }
 
 .dummytxt {
@@ -212,3 +211,22 @@ input[type='search'] {
 
 /** Trending */ 
 
+.trend {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 150px;
+    width: 300px;
+
+    display: grid; 
+    grid-template: 1fr 1fr/ 1fr;
+    gap: 10px;
+
+}
+
+.trend1,
+.trend2 {
+    display: grid;
+    grid-template: 1fr / 50px 1fr;
+    align-self: center;
+}
