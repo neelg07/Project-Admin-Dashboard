@@ -174,4 +174,41 @@ input[type='search'] {
 /** Main Grid */
 .main {
     background-color: lightgray;
+    padding: 30px;
+    
+    display: grid;
+    grid-template: 100% / 2.5fr 1fr;
 }
+
+/** Right side of main */
+
+.rmain {
+    display: grid;
+    padding: 10px;
+    grid-template: 2rem 1fr 2rem 1fr / 1fr;
+    gap: 10px;
+}
+
+/** Announcements */
+
+.announce {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 30ch;
+}
+
+.dummytxt {
+    font-size: 16px;
+}
+
+.announce h4 {
+    padding: 10px 0;
+}
+
+.hr {
+    padding-bottom: 10px;
+}
+
+/** Trending */ 
+
