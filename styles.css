@@ -12,7 +12,7 @@
 .container {
     height: 100vh;
     width: 100vw;
-    min-width: 925px;
+    min-width: 1165px;
     display: grid;
     grid-template: repeat(5, minmax(150px, 1fr)) / repeat(5, minmax(160px, 1fr)); 
 }
@@ -84,13 +84,14 @@
     gap: 10px;
     justify-self: center;
     align-self: center;
-    min-width: 400px;
+    min-width: 445px;
 }
 
 .share button {
     width: clamp(100px, 25%, 125px);
-    height: 35px;
+    height: 45px;
 
+    font-size: large;
     background-color: rgb(15, 168, 219);
     color: white;
 
@@ -103,6 +104,7 @@
     gap: 25px;
     justify-content: center;
     align-items: center;
+    min-width: 475px;
 }
 
 .share button:hover {
@@ -131,11 +133,13 @@
     border: none;
 }
 
-.topleft button:hover {
+.topleft button:hover,
+.topright button:hover {
     cursor: pointer;
 }
 
-.topleft button:active {
+.topleft button:active,
+.topright button:active {
     transform: translateY(1px);
 }
 
@@ -148,7 +152,23 @@
 input[type='search'] {
     border-radius: 100px;
     height: 30px;
-    width: max(325px, 35vw);
+    width: max(325px, 40vw);
+    padding: 0 1rem;
+}
+
+.topright {
+    display: grid;
+    grid-template: 1fr / 50px 50px 200px;
+    gap: 8px;
+
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.topright > button {
+    border: none;
+    background: none;
 }
 
 /** Main Grid */
