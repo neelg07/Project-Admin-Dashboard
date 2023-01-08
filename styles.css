@@ -159,11 +159,14 @@ input[type='search'] {
 .topright {
     display: grid;
     grid-template: 1fr / 50px 50px 200px;
-    gap: 8px;
 
     justify-self: center;
     justify-items: center;
     align-items: center;
+}
+
+.topright img {
+    margin-right: -20px;
 }
 
 .topright > button {
@@ -175,6 +178,8 @@ input[type='search'] {
 .main {
     background-color: lightgray;
     padding: 20px;
+
+    gap: 40px;
     
     display: grid;
     grid-template: 100% / 2.5fr 1fr;
@@ -192,9 +197,10 @@ input[type='search'] {
 
 .announce {
     background-color: white;
+    box-shadow: -5px 5px 2px gray;
     padding: 20px 30px;
     border-radius: 10px;
-    width: 40ch;
+    width: 32ch;
 }
 
 .dummytxt {
@@ -213,14 +219,14 @@ input[type='search'] {
 
 .trend {
     background-color: white;
+    box-shadow: -5px 5px 2px gray;
     border-radius: 10px;
     padding: 20px;
-    height: 150px;
-    width: 300px;
+    height: 125px;
+    width: 35ch;
 
     display: grid; 
     grid-template: 1fr 1fr/ 1fr;
-    gap: 10px;
 
 }
 
@@ -229,4 +235,29 @@ input[type='search'] {
     display: grid;
     grid-template: 1fr / 50px 1fr;
     align-self: center;
+}
+
+.trend-header {
+    margin-top: 5px;
+}
+
+/** Left Side of Main  */
+
+.lmain {
+    display: grid;
+    grid-template: 2rem 1fr / 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: auto; 
+    gap: 40px;
+    min-width: 690px;
+}
+
+.projects div {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -5px 5px 2px gray;
 }
