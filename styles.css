@@ -277,6 +277,7 @@ input[type='search'] {
 .projects div h3 {
     align-self: center;
     padding-left: 15px;
+    padding-top: 15px;
 }
 
 .projects div p {
