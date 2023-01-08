@@ -48,10 +48,36 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.dash {
+    padding-left: 10px;
+    font-size: x-large;
+}
+
 .section1 {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
     gap: 15px;
+
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.section1 div,
+.dash,
+.section2 div {
+    cursor: pointer;
+}
+
+.section1 div:hover,
+.dash:hover,
+.section2 div:hover {
+    transform: scale(1.1);
+}
+
+.section1 div:active,
+.dash:active,
+.section2 div:active {
+    transform: scale(1);
 }
 
 .section2 {
@@ -61,6 +87,17 @@
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr;
     gap: 15px;
+
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.section1 div,
+.dash,
+.section2 div {
+    display: flex;
+    gap: 20px;
+    align-content: center;
 }
 
 /** Header Grid */
